@@ -22,25 +22,34 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="vertical"
-        android:gravity="center"
-        android:layout_weight="0.5">
+        android:layout_weight="0.6">
 
         <com.example.tony.myapplication.OpenSansEditText
             android:background="@drawable/borders"
             android:hint="Mobile #"
             android:maxLines="1"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
             android:paddingLeft="15dp"
             android:paddingStart="15dp"
-            android:layout_margin="10dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:id="@+id/openSansEditText2" />
+
         <com.example.tony.myapplication.OpenSansButton
             android:background="@drawable/button_border_baby_blue"
             android:text="EXISTING USER"
+            android:textColor="@color/white"
             android:layout_margin="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -50,6 +59,7 @@
             android:id="@+id/new_user_button"
             android:background="@drawable/button_border_blue"
             android:text="NEW USER"
+            android:textColor="@color/white"
             android:layout_margin="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
