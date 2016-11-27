@@ -40,6 +40,7 @@
         android:layout_weight="1"
         android:inputType="text"
         android:hint="Date of Birth"
+        android:text="Date of Birth"
         android:id="@+id/profile_dob"/>
 
     <com.example.tony.myapplication.OpenSansEditText
@@ -58,6 +59,7 @@
         android:layout_weight="1"
         android:inputType="text"
         android:hint="Height"
+        android:text="Height"
         android:id="@+id/height"/>
 
     <com.example.tony.myapplication.OpenSansEditText
@@ -76,6 +78,7 @@
         android:layout_weight="1"
         android:inputType="text"
         android:hint="Weight"
+        android:text="Weight"
         android:id="@+id/profile_weight"/>
     <com.example.tony.myapplication.OpenSansEditText
         android:background="@drawable/borders"
@@ -93,6 +96,7 @@
         android:layout_weight="1"
         android:inputType="text"
         android:hint="Number of children"
+        android:text="Number of children"
         android:id="@+id/profile_number_of_children"/>
     <com.example.tony.myapplication.OpenSansEditText
         android:background="@drawable/borders"
@@ -110,6 +114,7 @@
         android:layout_weight="1"
         android:inputType="text"
         android:hint="BMI"
+        android:text="BMI"
         android:id="@+id/profile_BMI"/>
 
     <com.example.tony.myapplication.OpenSansButton

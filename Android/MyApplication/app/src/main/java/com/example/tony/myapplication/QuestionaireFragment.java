@@ -10,7 +10,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.ImageView;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.sql.Time;
 import java.util.ArrayList;
@@ -22,13 +26,6 @@ import java.util.ArrayList;
 public class QuestionaireFragment extends Fragment {
     public ImageView backButton;
     public OpenSansButton doneButton;
-
-    public CheckBox mBirthControl;
-    public CheckBox mDiabetes;
-    public CheckBox mHighBloodPressure;
-    public CheckBox mMedicalInsurance;
-    public CheckBox mPregnant;
-    public CheckBox mAllergies;
 
     @Nullable
     @Override
@@ -50,6 +47,7 @@ public class QuestionaireFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
         return rootView;
     }
 
@@ -57,15 +55,5 @@ public class QuestionaireFragment extends Fragment {
         return new QuestionaireFragment();
     }
 
-    public ArrayList<Boolean> getData() {
-        ArrayList<Boolean> myList = new ArrayList<>();
-        myList.add(mBirthControl.isChecked());
-        myList.add(mDiabetes.isChecked());
-        myList.add(mHighBloodPressure.isChecked());
-        myList.add(mMedicalInsurance.isChecked());
-        myList.add(mPregnant.isChecked());
-        myList.add(mAllergies.isChecked());
-        return myList;
-    }
 
 }

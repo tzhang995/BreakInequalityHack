@@ -49,16 +49,6 @@
             android:inputType="text"/>
 
         <com.example.tony.myapplication.OpenSansButton
-            android:background="@drawable/button_border_baby_blue"
-            android:text="SIGN UP"
-            android:id="@+id/front_page_signup"
-            android:textColor="@color/white"
-            android:layout_margin="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
-
-        <com.example.tony.myapplication.OpenSansButton
             android:id="@+id/new_user_button"
             android:background="@drawable/button_border_blue"
             android:text="LOGIN"
