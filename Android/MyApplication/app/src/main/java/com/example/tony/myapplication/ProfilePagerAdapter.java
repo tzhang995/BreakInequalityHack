@@ -16,6 +16,8 @@ public class ProfilePagerAdapter extends FragmentPagerAdapter {
         switch (position) {
             case 0: return ProfileFragment.newFrag();
             case 1:
+                return PersonalFragment.newFrag();
+            case 2:
             default:
                 return QuestionaireFragment.newFrag();
         }
@@ -27,6 +29,6 @@ public class ProfilePagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 2;
+        return 3;
     }
 }
