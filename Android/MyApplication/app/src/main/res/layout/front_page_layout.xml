@@ -44,7 +44,9 @@
             android:layout_marginRight="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/openSansEditText2" />
+            android:imeOptions="actionDone"
+            android:id="@+id/login_mobile_phone_number"
+            android:inputType="text"/>
 
         <com.example.tony.myapplication.OpenSansButton
             android:background="@drawable/button_border_baby_blue"

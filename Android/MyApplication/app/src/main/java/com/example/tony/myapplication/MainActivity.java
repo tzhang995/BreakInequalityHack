@@ -1,15 +1,21 @@
 package com.example.tony.myapplication;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
+import android.widget.EditText;
 
 public class MainActivity extends Activity {
 
     private Button newUserButton;
+
+    private EditText mMobileEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,8 +29,15 @@ public class MainActivity extends Activity {
                 view.getContext().startActivity(intent);
             }
         });
+
+        mMobileEditText = (EditText) findViewById(R.id.login_mobile_phone_number);
+        mMobileEditText.setImeOptions(EditorInfo.IME_ACTION_DONE);
     }
 
-
+    private void hide_keyboard(Context context, View view) {
+        InputMethodManager inputMethodManager = (InputMethodManager)
+                context.getSystemService(Context.INPUT_METHOD_SERVICE);
+        inputMethodManager.toggleSoftInput(0, 0);
+    }
 
 }
