@@ -10,13 +10,14 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="27dp"
+            android:layout_marginTop="21dp"
+            android:id="@+id/medical_page_back"
             android:src="@drawable/arrow"/>
         <com.example.tony.myapplication.OpenSansTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:layout_marginTop="27dp"
+            android:layout_marginTop="21dp"
             android:textSize="20sp"
             android:text="MEDICAL HISTORY"/>
     </RelativeLayout>
@@ -37,6 +38,7 @@
             android:layout_height="wrap_content"
             android:text="Are you on birth control?"/>
         <CheckBox
+            android:buttonTint="@color/baby_blue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
@@ -58,6 +60,7 @@
             android:layout_height="wrap_content"
             android:text="Do you have diabetes?"/>
         <CheckBox
+            android:buttonTint="@color/baby_blue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
@@ -78,6 +81,7 @@
             android:layout_height="wrap_content"
             android:text="Do you have high blood pressure?"/>
         <CheckBox
+            android:buttonTint="@color/baby_blue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
@@ -98,6 +102,7 @@
             android:layout_height="wrap_content"
             android:text="Do you have medical insurance?"/>
         <CheckBox
+            android:buttonTint="@color/baby_blue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
@@ -118,6 +123,7 @@
             android:layout_height="wrap_content"
             android:text="Have you ever been pregnant?"/>
         <CheckBox
+            android:buttonTint="@color/baby_blue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
@@ -138,6 +144,7 @@
             android:layout_height="wrap_content"
             android:text="Do you have any allergies?"/>
         <CheckBox
+            android:buttonTint="@color/baby_blue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
@@ -148,11 +155,11 @@
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         android:layout_marginBottom="21dp"
+        android:id="@+id/medical_page_next"
         android:text="NEXT"
         android:textColor="@color/white"
         android:background="@drawable/button_border_blue"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_height="40dp"/>
 
 </LinearLayout>
