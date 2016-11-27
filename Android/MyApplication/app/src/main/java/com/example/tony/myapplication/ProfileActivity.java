@@ -12,6 +12,7 @@ import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 
@@ -29,6 +30,8 @@ public class ProfileActivity extends FragmentActivity {
     private ImageView mPageOne;
     private ImageView mPageTwo;
     private ImageView mPageThree;
+
+    private EditText mName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,7 +63,6 @@ public class ProfileActivity extends FragmentActivity {
         mPageOne.setImageResource(R.drawable.small_circle_white);
         mPageTwo = (ImageView) findViewById(R.id.page2);
         mPageThree = (ImageView) findViewById(R.id.page3);
-
 
     }
     public void changePage(int position) {

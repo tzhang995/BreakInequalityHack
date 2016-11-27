@@ -7,7 +7,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageView;
+
+import java.util.ArrayList;
 
 /**
  * Created by Tony on 2016-11-26.
@@ -16,6 +19,12 @@ import android.widget.ImageView;
 public class PersonalFragment extends Fragment {
     public ImageView backButton;
     public OpenSansButton nextButton;
+
+    public EditText mDob;
+    public EditText mHeight;
+    public EditText mWeight;
+    public EditText mNumOfChildren;
+    public EditText mBMI;
 
     @Nullable
     @Override
@@ -45,5 +54,15 @@ public class PersonalFragment extends Fragment {
 
     public static PersonalFragment newFrag() {
         return new PersonalFragment();
+    }
+
+    public ArrayList<String> getData(){
+        ArrayList<String> myList = new ArrayList<>();
+        myList.add(mDob.getEditableText().toString());
+        myList.add(mHeight.getEditableText().toString());
+        myList.add(mWeight.getEditableText().toString());
+        myList.add(mNumOfChildren.getEditableText().toString());
+        myList.add(mBMI.getEditableText().toString());
+        return myList;
     }
 }

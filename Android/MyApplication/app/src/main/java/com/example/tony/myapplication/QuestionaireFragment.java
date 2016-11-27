@@ -6,7 +6,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
 import android.widget.ImageView;
+
+import java.util.ArrayList;
 
 /**
  * Created by Tony on 2016-11-26.
@@ -14,7 +17,14 @@ import android.widget.ImageView;
 
 public class QuestionaireFragment extends Fragment {
     public ImageView backButton;
-    public OpenSansButton nextButton;
+    public OpenSansButton doneButton;
+
+    public CheckBox mBirthControl;
+    public CheckBox mDiabetes;
+    public CheckBox mHighBloodPressure;
+    public CheckBox mMedicalInsurance;
+    public CheckBox mPregnant;
+    public CheckBox mAllergies;
 
     @Nullable
     @Override
@@ -28,18 +38,29 @@ public class QuestionaireFragment extends Fragment {
                 myAc.setBack(2);
             }
         });
-        nextButton = (OpenSansButton) rootView.findViewById(R.id.medical_page_next);
-//        nextButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                ProfileActivity myAc = (ProfileActivity) getActivity();
-//                myAc.setNext(1);
-//            }
-//        });
+        doneButton = (OpenSansButton) rootView.findViewById(R.id.medical_page_done);
+        doneButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
         return rootView;
     }
 
     public static QuestionaireFragment newFrag() {
         return new QuestionaireFragment();
     }
+
+    public ArrayList<Boolean> getData() {
+        ArrayList<Boolean> myList = new ArrayList<>();
+        myList.add(mBirthControl.isChecked());
+        myList.add(mDiabetes.isChecked());
+        myList.add(mHighBloodPressure.isChecked());
+        myList.add(mMedicalInsurance.isChecked());
+        myList.add(mPregnant.isChecked());
+        myList.add(mAllergies.isChecked());
+        return myList;
+    }
+
 }

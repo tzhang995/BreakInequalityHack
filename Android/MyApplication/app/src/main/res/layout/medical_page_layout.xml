@@ -38,6 +38,7 @@
             android:layout_height="wrap_content"
             android:text="Are you on birth control?"/>
         <CheckBox
+            android:id="@+id/profile_birth_control"
             android:buttonTint="@color/baby_blue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -60,6 +61,7 @@
             android:layout_height="wrap_content"
             android:text="Do you have diabetes?"/>
         <CheckBox
+            android:id="@+id/profile_diabetes"
             android:buttonTint="@color/baby_blue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -81,6 +83,7 @@
             android:layout_height="wrap_content"
             android:text="Do you have high blood pressure?"/>
         <CheckBox
+            android:id="@+id/profile_blood_pressure"
             android:buttonTint="@color/baby_blue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -102,6 +105,7 @@
             android:layout_height="wrap_content"
             android:text="Do you have medical insurance?"/>
         <CheckBox
+            android:id="@+id/profile_medical_insurance"
             android:buttonTint="@color/baby_blue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -123,6 +127,7 @@
             android:layout_height="wrap_content"
             android:text="Have you ever been pregnant?"/>
         <CheckBox
+            android:id="@+id/profile_pregnant"
             android:buttonTint="@color/baby_blue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -144,6 +149,7 @@
             android:layout_height="wrap_content"
             android:text="Do you have any allergies?"/>
         <CheckBox
+            android:id="@+id/profile_allergies"
             android:buttonTint="@color/baby_blue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -155,8 +161,8 @@
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         android:layout_marginBottom="21dp"
-        android:id="@+id/medical_page_next"
-        android:text="NEXT"
+        android:id="@+id/medical_page_done"
+        android:text="DONE"
         android:textColor="@color/white"
         android:background="@drawable/button_border_blue"
         android:layout_width="match_parent"
