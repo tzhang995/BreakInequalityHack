@@ -16,6 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ProfileActivity"/>
+        <activity android:name=".TimeLineActivity"/>
+        <activity android:name=".YourResultsActivity"/>
     </application>
 
 </manifest>

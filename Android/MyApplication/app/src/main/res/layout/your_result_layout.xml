@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:gravity="center"
+    android:gravity="center_horizontal"
     android:layout_marginTop="20dp"
     android:layout_marginBottom="20dp"
     android:layout_height="match_parent">
@@ -28,7 +28,6 @@
 
     <com.example.tony.myapplication.OpenSansTextView
         android:background="@drawable/borders"
-        android:maxLines="1"
         android:layout_marginLeft="24dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
@@ -61,6 +60,7 @@
         android:text="HIGH-RISK PREGNANCY"/>
 
     <com.example.tony.myapplication.OpenSansButton
+        android:layout_marginTop="60dp"
         android:layout_marginLeft="24dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
@@ -69,7 +69,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_gravity="center"
-        android:id="@+id/personal_page_next"
+        android:id="@+id/your_result_complete_profile"
         android:background="@drawable/button_border_blue"
         android:text="C O M P L E T E     P R O F I L E"
         android:textColor="#fff"/>

@@ -1,5 +1,8 @@
 package com.example.tony.myapplication;
 
+import android.app.ActivityOptions;
+import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -9,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.ImageView;
 
+import java.sql.Time;
 import java.util.ArrayList;
 
 /**
@@ -42,7 +46,8 @@ public class QuestionaireFragment extends Fragment {
         doneButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(getActivity(), YourResultsActivity.class);
+                startActivity(intent);
             }
         });
         return rootView;

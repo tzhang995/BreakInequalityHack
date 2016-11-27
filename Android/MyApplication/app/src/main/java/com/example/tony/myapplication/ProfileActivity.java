@@ -59,28 +59,9 @@ public class ProfileActivity extends FragmentActivity {
             }
         });
 
-        mPageOne = (ImageView) findViewById(R.id.page1);
-        mPageOne.setImageResource(R.drawable.small_circle_white);
-        mPageTwo = (ImageView) findViewById(R.id.page2);
-        mPageThree = (ImageView) findViewById(R.id.page3);
 
     }
     public void changePage(int position) {
-        mPageOne.setImageResource(R.drawable.small_circle_grey);
-        mPageTwo.setImageResource(R.drawable.small_circle_grey);
-        mPageThree.setImageResource(R.drawable.small_circle_grey);
-
-        switch (position){
-            case 0:
-                mPageOne.setImageResource(R.drawable.small_circle_white);
-                break;
-            case 1:
-                mPageTwo.setImageResource(R.drawable.small_circle_white);
-                break;
-            default:
-                mPageThree.setImageResource(R.drawable.small_circle_white);
-                break;
-        }
     }
 
     public void setPage(int page){
