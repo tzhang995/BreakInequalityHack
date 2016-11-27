@@ -207,11 +207,12 @@
             android:onClick="onCheckboxClicked"/>
     </LinearLayout>
 
-
     <Button
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="10px"
-        android:text="Next" />
+        android:background="#688CFF"
+        android:text="Next"
+        android:textColor="#fff"/>
 </LinearLayout>

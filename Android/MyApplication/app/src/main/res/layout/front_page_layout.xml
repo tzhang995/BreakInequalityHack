@@ -14,7 +14,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/ic_launcher"/>
+            android:src="@drawable/login_logo"/>
         <com.example.tony.myapplication.OpenSansTextView
             android:text="HealthSimple"
             android:padding="5dp"
@@ -39,15 +39,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         <com.example.tony.myapplication.OpenSansButton
-            android:background="@drawable/borders"
+            android:background="@drawable/button_border_baby_blue"
             android:text="EXISTING USER"
             android:layout_margin="10dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            />
 
         <com.example.tony.myapplication.OpenSansButton
             android:id="@+id/new_user_button"
-            android:background="@drawable/borders"
+            android:background="@drawable/button_border_blue"
             android:text="NEW USER"
             android:layout_margin="10dp"
             android:layout_width="match_parent"
