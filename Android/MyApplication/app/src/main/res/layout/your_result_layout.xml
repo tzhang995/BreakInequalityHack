@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/personal_page_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/arrow"/>
+        <com.example.tony.myapplication.OpenSansTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:text="YOUR RESULTS"/>
+    </RelativeLayout>
+
+    <com.example.tony.myapplication.OpenSansTextView
+        android:background="@drawable/borders"
+        android:maxLines="1"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="29dp"
+        android:layout_height="90dp"
+        android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:hint="Based on the answers you have provided,
+        we have found that you are most likely to have a
+        high-risk pregnancy."
+        android:id="@+id/your_result_dob"/>
+
+    <ImageView
+        android:layout_width="116dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="41.5dp"
+        android:layout_marginBottom="25.8dp"
+        android:src="@drawable/risk"/>
+
+    <com.example.tony.myapplication.OpenSansTextView
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="#e54b4b"
+        android:text="HIGH-RISK PREGNANCY"/>
+
+    <com.example.tony.myapplication.OpenSansButton
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="21dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:id="@+id/personal_page_next"
+        android:background="@drawable/button_border_blue"
+        android:text="C O M P L E T E     P R O F I L E"
+        android:textColor="#fff"/>
+</LinearLayout>

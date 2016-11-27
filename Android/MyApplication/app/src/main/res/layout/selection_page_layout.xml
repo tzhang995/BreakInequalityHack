@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+    <com.example.tony.myapplication.OpenSansTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FINDING YOUR STAGE "
+        android:textSize="22sp"
+        android:gravity="center"
+        />
+
+
+    <com.example.tony.myapplication.OpenSansTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select which stage best applies to you"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="47dp"/>
+
+    <com.example.tony.myapplication.OpenSansButton
+        android:background="@drawable/button_white_bg"
+        android:textColor="@color/baby_blue"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="PRENATAL CARE"
+        />
+    <com.example.tony.myapplication.OpenSansButton
+        android:background="@drawable/button_white_bg"
+        android:textColor="@color/baby_blue"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="DURING PREGNANCY"
+        />
+    <com.example.tony.myapplication.OpenSansButton
+        android:background="@drawable/button_white_bg"
+        android:textColor="@color/baby_blue"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="POSTPARTUM CARE"
+        />
+    <com.example.tony.myapplication.OpenSansButton
+        android:background="@drawable/button_white_bg"
+        android:textColor="@color/baby_blue"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="AWARENESS"
+        />
+
+</LinearLayout>
