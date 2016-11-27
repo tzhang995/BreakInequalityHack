@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:gravity="center"
+    android:gravity="center_horizontal"
     android:layout_height="match_parent">
     <RelativeLayout
         android:layout_width="match_parent"
@@ -12,7 +12,7 @@
         android:layout_marginBottom="20dp"
         >
         <ImageView
-            android:id="@+id/contact_page_back"
+            android:id="@+id/personal_page_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
@@ -36,6 +36,7 @@
     <View
         android:layout_width="53dp"
         android:layout_height="2dp"
+        android:layout_marginBottom="15dp"
         android:background="@color/baby_blue"
         />
 
@@ -44,12 +45,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_marginTop="5dp"
-        android:text="Prenatal care helps decrease risks during
-        pregnancy and increases the chance of a safe
-        and healthy delivery. Regular prenatal visits
-        can help your doctor monitor your pregnancy
-        and identify any problems or complications
-        before they become serious."
+        android:text="Prenatal care helps decrease risks during pregnancy and increases the chance of a safe and healthy delivery. Regular prenatal visits can help your doctor monitor your pregnancy and identify any problems or complications before they become serious."
         />
 
     <com.example.tony.myapplication.OpenSansTextView
@@ -63,6 +59,7 @@
     <View
         android:layout_width="53dp"
         android:layout_height="2dp"
+        android:layout_marginBottom="15dp"
         android:background="@color/baby_blue"
         />
 
@@ -71,8 +68,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_marginTop="5dp"
-        android:text="Prenatal care should ideally begin 3 months
-        before trying to conceive."
+        android:text="Prenatal care should ideally begin 3 months before trying to conceive."
         />
 
     <com.example.tony.myapplication.OpenSansTextView
@@ -86,6 +82,7 @@
     <View
         android:layout_width="53dp"
         android:layout_height="2dp"
+        android:layout_marginBottom="15dp"
         android:background="@color/baby_blue"
         />
 
@@ -94,12 +91,14 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_marginTop="5dp"
-        android:text="- Taking folic acid supplements daily
-        (400 to 800 micrograms)
-
-        - Talking to your doctor about your medical
-        conditions, dietary supplements, and any over-
-        the-counter/prescription drugs you can take"
+        android:text="- Taking folic acid supplements daily (400 to 800 micrograms)"
+        />
+    <com.example.tony.myapplication.OpenSansTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="- Talking to your doctor about your medical conditions, dietary supplements, and any over-the-counter/prescription drugs you can take"
         />
 
     <com.example.tony.myapplication.OpenSansButton
@@ -107,11 +106,11 @@
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="60dp"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_gravity="center"
-        android:id="@+id/personal_page_next"
+        android:id="@+id/faq_next"
         android:background="@drawable/button_border_blue"
         android:text="BEING CONSULTATION"
         android:textColor="#fff"/>

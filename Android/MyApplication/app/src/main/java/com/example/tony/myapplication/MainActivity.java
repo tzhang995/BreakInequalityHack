@@ -15,6 +15,8 @@ public class MainActivity extends Activity {
 
     private Button newUserButton;
 
+    private Button signUpButton;
+
     private EditText mMobileEditText;
 
     @Override
@@ -29,7 +31,14 @@ public class MainActivity extends Activity {
                 view.getContext().startActivity(intent);
             }
         });
-
+        signUpButton = (Button) findViewById(R.id.front_page_signup);
+        signUpButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, StageActivity.class);
+                startActivity(intent);
+            }
+        });
         mMobileEditText = (EditText) findViewById(R.id.login_mobile_phone_number);
         mMobileEditText.setImeOptions(EditorInfo.IME_ACTION_DONE);
     }

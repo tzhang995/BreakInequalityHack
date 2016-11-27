@@ -37,6 +37,7 @@ public class ProfileActivity extends FragmentActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.view_pager_new_user);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         mPager = (ViewPager) findViewById(R.id.new_user_pager);
         mPagerAdapter = new ProfilePagerAdapter(getSupportFragmentManager());
         mPager.setAdapter(mPagerAdapter);

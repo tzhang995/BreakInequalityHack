@@ -51,6 +51,7 @@
         <com.example.tony.myapplication.OpenSansButton
             android:background="@drawable/button_border_baby_blue"
             android:text="SIGN UP"
+            android:id="@+id/front_page_signup"
             android:textColor="@color/white"
             android:layout_margin="10dp"
             android:layout_width="match_parent"
