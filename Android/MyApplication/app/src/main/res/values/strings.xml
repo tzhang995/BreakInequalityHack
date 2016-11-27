@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="backend_url">YOUR_BACKEND_URL_HERE</string>
+    <string name="SID">ACd7bb2058553748c04702141170476ee3</string>
+    <string name="TOKEN">ac4f69c6990839f4c9bdff089e3b80a0</string>
+    <string name="PHONE_NUMBER">14169920468</string>
+    <string name="TWILIO_PHONE_NUMBER">12262421101</string>
 </resources>
