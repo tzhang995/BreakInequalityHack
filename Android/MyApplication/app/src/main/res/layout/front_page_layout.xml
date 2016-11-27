@@ -50,7 +50,7 @@
 
         <com.example.tony.myapplication.OpenSansButton
             android:background="@drawable/button_border_baby_blue"
-            android:text="EXISTING USER"
+            android:text="SIGN UP"
             android:textColor="@color/white"
             android:layout_margin="10dp"
             android:layout_width="match_parent"
@@ -60,7 +60,7 @@
         <com.example.tony.myapplication.OpenSansButton
             android:id="@+id/new_user_button"
             android:background="@drawable/button_border_blue"
-            android:text="NEW USER"
+            android:text="LOGIN"
             android:textColor="@color/white"
             android:layout_margin="10dp"
             android:layout_width="match_parent"
